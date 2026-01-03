@@ -15,3 +15,42 @@ This project contains Terraform code to create:
 
 ## Project Structure
 
+.
+├── main.tf # Providers and main Terraform resources
+├── vpc.tf # VPC resources
+├── subnet.tf # Subnet resources
+├── ec2.tf # EC2 instances
+├── variables.tf # Terraform variables
+├── outputs.tf # Outputs
+└── README.md
+
+csharp
+Copy code
+
+## Usage
+
+1. Initialize Terraform:
+
+```bash
+terraform init
+Plan your changes:
+
+bash
+Copy code
+terraform plan
+Apply Terraform:
+
+bash
+Copy code
+terraform apply
+Destroy resources when done:
+
+bash
+Copy code
+terraform destroy
+Notes
+The EC2 instances are Amazon Linux.
+
+Make sure SSH access is allowed from your current IP in the security group.
+
+Keep your private key safe (mykey.pem).
