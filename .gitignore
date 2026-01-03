@@ -1,0 +1,18 @@
+# Terraform files to ignore
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+*.swp
+
+# AWS keys or sensitive files (just in case)
+*.pem
